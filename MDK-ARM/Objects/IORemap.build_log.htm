@@ -1,0 +1,529 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=47GU5-GKYAP-EVW1R-K8NUP-YXSRA-ZIUDI
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.35.0.2
+Toolchain Path:  D:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\zongqiao.pei\Desktop\G09Z511\G09Z511_mcu0_V1.7_F1.9\MDK-ARM\IORemap.uvprojx
+Project File Date:  05/15/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'D:\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'N32G43x'
+compiling n32g43x_crc.c...
+compiling misc.c...
+compiling n32g43x_can.c...
+compiling system_n32g43x.c...
+assembling startup_n32g43x.s...
+compiling n32g43x_adc.c...
+compiling n32g43x_comp.c...
+compiling n32g43x_dac.c...
+compiling n32g43x_dbg.c...
+compiling n32g43x_dma.c...
+compiling n32g43x_exti.c...
+compiling n32g43x_flash.c...
+compiling n32g43x_gpio.c...
+compiling n32g43x_i2c.c...
+compiling n32g43x_iwdg.c...
+compiling n32g43x_lptim.c...
+compiling n32g43x_lpuart.c...
+compiling n32g43x_opamp.c...
+compiling n32g43x_pwr.c...
+compiling n32g43x_rcc.c...
+compiling n32g43x_rtc.c...
+compiling n32g43x_spi.c...
+compiling n32g43x_tim.c...
+compiling n32g43x_tsc.c...
+compiling n32g43x_usart.c...
+compiling n32g43x_wwdg.c...
+compiling n32g43x_it.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(7): warning: In file included from...
+../driver/../driver/GMtypes.h(34): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BYTE;
+                                ^
+../driver/i2c_master.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(7): warning: In file included from...
+../driver/../driver/GMtypes.h(35): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/utils.h(73): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../src/main.c(41): warning: In file included from...
+../src/../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+../src/main.c(55): warning: In file included from...
+../driver\i2c_master_1.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/GMtypes.h(34): note: previous definition is here
+typedef unsigned char           BYTE;
+                                ^
+../src/main.c(55): warning: In file included from...
+../driver\i2c_master_1.h(9): warning: redefinition of typedef 'WORD' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short  WORD;
+                        ^
+../driver/i2c_master.h(9): note: previous definition is here
+typedef unsigned short  WORD;
+                        ^
+9 warnings generated.
+compiling main.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/dlp_manager.c(133): warning: implicitly declaring library function 'malloc' with type 'void *(unsigned int)' [-Wimplicit-function-declaration]
+        struct pic_def *pic = malloc(sizeof(struct pic_def));
+                              ^
+../driver/dlp_manager.c(133): note: include the header <stdlib.h> or explicitly provide a declaration for 'malloc'
+../driver/dlp_manager.c(185): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'const void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        memcpy(&d[1], value, len);
+                      ^~~~~
+D:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h(59): note: passing argument to parameter here
+                    const void * __restrict /*s2*/, size_t /*n*/) __attribute__((__nonnull__(1,2)));
+                                                  ^
+../driver/dlp_manager.c(225): warning: passing 'volatile uint8_t *' (aka 'volatile unsigned char *') to parameter of type 'void *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    ret = i2c_read_block(0x37, data_len, data);
+                                         ^~~~
+../driver/i2c_master.h(63): note: passing argument to parameter 'RxData' here
+int8_t i2c_read_block(uint8_t ucSlaveDeviceAddr,uint8_t numBytes,void* RxData);
+                                                                       ^
+../driver/dlp_manager.c(226): warning: implicitly declaring library function 'free' with type 'void (void *)' [-Wimplicit-function-declaration]
+        free(d);
+        ^
+../driver/dlp_manager.c(226): note: include the header <stdlib.h> or explicitly provide a declaration for 'free'
+5 warnings generated.
+compiling dlp_manager.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/d3437.c(387): warning: incompatible pointer types passing 'uint8_t (*)[2]' to parameter of type 'volatile uint8_t *' (aka 'volatile unsigned char *') [-Wincompatible-pointer-types]
+                safe_write(0x72, &d, 1);
+                                 ^~
+../driver/d3437.c(34): note: passing argument to parameter 'value' here
+int8_t safe_write(uint8_t sub_addr, volatile uint8_t *value, uint8_t len)
+                                                      ^
+2 warnings generated.
+compiling d3437.c...
+compiling i2c_master.c...
+compiling n32g43x_start_pins.c...
+compiling bsp_uart.c...
+../driver/adc_basic.c(5): warning: In file included from...
+../driver/../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/adc_basic.c(5): warning: In file included from...
+../driver/../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/adc_basic.c(5): warning: In file included from...
+../driver/../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/adc_basic.c(5): warning: In file included from...
+../driver/../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+4 warnings generated.
+compiling adc_basic.c...
+../driver/bsp_adc.c(1): warning: In file included from...
+../driver/../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/bsp_adc.c(1): warning: In file included from...
+../driver/../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/bsp_adc.c(1): warning: In file included from...
+../driver/../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/bsp_adc.c(1): warning: In file included from...
+../driver/../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+4 warnings generated.
+compiling bsp_adc.c...
+compiling counter.c...
+compiling PWM.c...
+compiling clkctrl.c...
+../driver/app_softtimer.c(3): warning: In file included from...
+../driver/../driver/utils.h(73): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/../driver/GMtypes.h(35): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+../driver/app_softtimer.c(3): warning: In file included from...
+../driver/../driver/utils.h(138): warning: In file included from...
+../driver/i2c_master.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/../driver/GMtypes.h(34): note: previous definition is here
+typedef unsigned char           BYTE;
+                                ^
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/app_softtimer.c(11): warning: In file included from...
+../driver/i2c_master_1.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/i2c_master.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../driver/app_softtimer.c(11): warning: In file included from...
+../driver/i2c_master_1.h(9): warning: redefinition of typedef 'WORD' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short  WORD;
+                        ^
+../driver/i2c_master.h(9): note: previous definition is here
+typedef unsigned short  WORD;
+                        ^
+../driver/app_softtimer.c(12): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/app_softtimer.c(12): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/app_softtimer.c(12): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/app_softtimer.c(12): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+9 warnings generated.
+compiling app_softtimer.c...
+compiling app_log.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/i2c_slave_N32G43X.c(38): warning: In file included from...
+../driver/i2c_slave_N32G43X.h(32): warning: In file included from...
+../driver/GMtypes.h(34): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BYTE;
+                                ^
+../driver/i2c_master.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../driver/i2c_slave_N32G43X.c(38): warning: In file included from...
+../driver/i2c_slave_N32G43X.h(32): warning: In file included from...
+../driver/GMtypes.h(35): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/utils.h(73): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+3 warnings generated.
+compiling i2c_slave_N32G43X.c...
+../driver/bsp_focal_dz24.c(6): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/bsp_focal_dz24.c(6): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/bsp_focal_dz24.c(6): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/bsp_focal_dz24.c(6): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+4 warnings generated.
+compiling bsp_focal_dz24.c...
+../driver/app_iris.c(3): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/app_iris.c(3): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/app_iris.c(3): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/app_iris.c(3): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+../driver/app_iris.c(4): warning: In file included from...
+../driver/dlp_manager.h(14): warning: In file included from...
+../driver/utils.h(73): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/../driver/GMtypes.h(35): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+../driver/app_iris.c(4): warning: In file included from...
+../driver/dlp_manager.h(14): warning: In file included from...
+../driver/utils.h(138): warning: In file included from...
+../driver/i2c_master.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/../driver/GMtypes.h(34): note: previous definition is here
+typedef unsigned char           BYTE;
+                                ^
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+7 warnings generated.
+compiling app_iris.c...
+../driver/app_focal_ctrl.c(5): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(10): warning: 'ADC_CFG_IS_USE_AIN2' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN2            0    //PA1
+        ^
+../driver/bsp_adc_cfg_dabai.h(9): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN2            1
+        ^
+../driver/app_focal_ctrl.c(5): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(11): warning: 'ADC_CFG_IS_USE_AIN3' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN3            0    //PA2
+        ^
+../driver/bsp_adc_cfg_dabai.h(11): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN3            1
+        ^
+../driver/app_focal_ctrl.c(5): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(12): warning: 'ADC_CFG_IS_USE_AIN4' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN4            0    //PA3
+        ^
+../driver/bsp_adc_cfg_dabai.h(13): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN4            1
+        ^
+../driver/app_focal_ctrl.c(5): warning: In file included from...
+../driver/bsp_pi_api.h(7): warning: In file included from...
+../driver/bsp_adc.h(13): warning: 'ADC_CFG_IS_USE_AIN5' macro redefined [-Wmacro-redefined]
+#define ADC_CFG_IS_USE_AIN5            0    //PA4
+        ^
+../driver/bsp_adc_cfg_dabai.h(15): note: previous definition is here
+#define ADC_CFG_IS_USE_AIN5            1
+        ^
+../driver/app_focal_ctrl.c(8): warning: In file included from...
+../driver/i2c_master_1.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/../driver/GMtypes.h(34): note: previous definition is here
+typedef unsigned char           BYTE;
+                                ^
+../driver/app_focal_ctrl.c(9): warning: In file included from...
+../driver/i2c2_slave_N32G43X.h(5): warning: In file included from...
+../driver/utils.h(73): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/../driver/GMtypes.h(35): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+../driver/app_focal_ctrl.c(9): warning: In file included from...
+../driver/i2c2_slave_N32G43X.h(5): warning: In file included from...
+../driver/utils.h(138): warning: In file included from...
+../driver/i2c_master.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/i2c_master_1.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../driver/app_focal_ctrl.c(9): warning: In file included from...
+../driver/i2c2_slave_N32G43X.h(5): warning: In file included from...
+../driver/utils.h(138): warning: In file included from...
+../driver/i2c_master.h(9): warning: redefinition of typedef 'WORD' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned short  WORD;
+                        ^
+../driver/i2c_master_1.h(9): note: previous definition is here
+typedef unsigned short  WORD;
+                        ^
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+9 warnings generated.
+compiling app_focal_ctrl.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/utils.c(10): warning: In file included from...
+../driver/GMtypes.h(34): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BYTE;
+                                ^
+../driver/i2c_master.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../driver/utils.c(10): warning: In file included from...
+../driver/GMtypes.h(35): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/utils.h(73): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+3 warnings generated.
+compiling utils.c...
+compiling bsp_mult_pwm.c...
+../driver/bsp_filtermotor_soft_subdivision.c(15): warning: In file included from...
+../driver/utils.h(73): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/GMtypes.h(35): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+../driver/bsp_filtermotor_soft_subdivision.c(15): warning: In file included from...
+../driver/utils.h(138): warning: In file included from...
+../driver/i2c_master.h(8): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char   BYTE;
+                        ^
+../driver/GMtypes.h(34): note: previous definition is here
+typedef unsigned char           BYTE;
+                                ^
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+3 warnings generated.
+compiling bsp_filtermotor_soft_subdivision.c...
+compiling i2c_master_1.c...
+warning: 'volatile' ignored on this declaration [-Wmissing-declarations]
+../driver/i2c2_slave_N32G43X.c(2): warning: In file included from...
+../driver/i2c2_slave_N32G43X.h(6): warning: In file included from...
+../driver/GMtypes.h(34): warning: redefinition of typedef 'BYTE' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BYTE;
+                                ^
+../driver/i2c_master.h(8): note: previous definition is here
+typedef unsigned char   BYTE;
+                        ^
+../driver/i2c2_slave_N32G43X.c(2): warning: In file included from...
+../driver/i2c2_slave_N32G43X.h(6): warning: In file included from...
+../driver/GMtypes.h(35): warning: redefinition of typedef 'BOOL' is a C11 feature [-Wtypedef-redefinition]
+typedef unsigned char           BOOL;
+                                ^
+../driver/utils.h(73): note: previous definition is here
+typedef unsigned char           BOOL;
+                                ^
+3 warnings generated.
+compiling i2c2_slave_N32G43X.c...
+linking...
+Program Size: Code=79804 RO-data=1284 RW-data=72 ZI-data=7392  
+FromELF: creating hex file...
+".\Objects\IORemap.axf" - 0 Error(s), 65 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Nationstech
+                http://www.keil.com/pack/Nationstech.N32G43x_DFP.0.9.1.pack
+                Nationstech.N32G43x_DFP.0.9.1
+                Nationstech N32G43x Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:\Users\tutu.jia\AppData\Local\Arm\Packs\Nationstech\N32G43x_DFP\0.9.1\firmware\CMSIS\device
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>
